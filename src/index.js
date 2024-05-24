@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: false })) ;
 app.use(express.json());  
 /* --------------------------------- routers -------------------------------- */
 app.get('/inicio', (red, res) => {
-    res.json({"message":"hola mundo" })
+    res.render('index')
 });
 
 /* ------------------------------ public files ------------------------------ */
