@@ -4,7 +4,8 @@ import morgan from 'morgan';
 
 import {join,dirname} from 'path'
 import {fileURLToPath} from 'url'
-import {engine} from 'express-handlebars'
+import {engine} from 'express-handlebars' 
+import personasRoutes from './routes/personas.routes.js'
 /* ----------------------------- initialization ----------------------------- */
 const app =  exprees(); 
 const __dirname =  dirname(fileURLToPath(import.meta.url));
@@ -30,7 +31,8 @@ app.use(express.json());
 /* --------------------------------- routers -------------------------------- */
 app.get('/inicio', (red, res) => {
     res.render('index')
-});
+}); 
+app.use(personasRoutes);
 
 /* ------------------------------ public files ------------------------------ */
 app.use(express.static(join(__dirname, 'public')))

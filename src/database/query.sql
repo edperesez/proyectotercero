@@ -12,4 +12,5 @@ SELECT * FROM personas;
 
 
 CREATE USER 'prueba01 '@' localhost'IDENTIFIED BY 'Prueba01' ; 
-GRANT ALL PREVILEGES ON prueba01.* TO 'prueba01'@'localhost';
+GRANT ALL 'PREVILEGES ON prueba01.*  TO 'prueba01'@'localhost'; 
+GRANT ALL PREVILEGES ON *.* TO 'prueba01'@'localhost';  
