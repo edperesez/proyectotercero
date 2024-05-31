@@ -26,8 +26,8 @@ app.set( 'view engine', ',hbs');
 
 /* ------------------------------- Middlewares ------------------------------ */
 app.use(morgan('dev'));
-app.use(express.urlencoded({ extended: false })) ; 
-app.use(express.json());  
+app.use(exprees.urlencoded({ extended: false })) ; 
+app.use(exprees.json());  
 /* --------------------------------- routers -------------------------------- */
 app.get('/inicio', (red, res) => {
     res.render('index')
@@ -35,7 +35,7 @@ app.get('/inicio', (red, res) => {
 app.use(personasRoutes);
 
 /* ------------------------------ public files ------------------------------ */
-app.use(express.static(join(__dirname, 'public')))
+app.use(exprees.static(join(__dirname, 'public'))) 
 
 
 /* ------------------------------- run server ------------------------------- */

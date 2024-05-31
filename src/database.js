@@ -8,7 +8,7 @@ import { createPool } from "mysql2/promise";
         database: 'prueba01'
     });   
 
-
+      export default pool;
 
 
 
