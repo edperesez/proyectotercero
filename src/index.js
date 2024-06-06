@@ -5,9 +5,12 @@ import morgan from 'morgan';
 import {join,dirname} from 'path'
 import {fileURLToPath} from 'url'
 import {engine} from 'express-handlebars' 
-import personasRoutes from './routes/personas.routes.js'
+import clientesRoutes from './routes/clientesRoutes.js' 
+import exp from 'constants';
+
 /* ----------------------------- initialization ----------------------------- */
 const app =  exprees(); 
+/* ---------------------------- evitar colisiones --------------------------- */
 const __dirname =  dirname(fileURLToPath(import.meta.url));
 
 /* --------------------------------- setting -------------------------------- */
@@ -32,7 +35,7 @@ app.use(exprees.json());
 app.get('/inicio', (red, res) => {
     res.render('index')
 }); 
-app.use(personasRoutes);
+app.use(clientesRoutes); 
 
 /* ------------------------------ public files ------------------------------ */
 app.use(exprees.static(join(__dirname, 'public'))) 
