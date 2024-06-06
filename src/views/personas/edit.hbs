@@ -5,29 +5,29 @@
             <div class="card tex-center">
                 <div class="card header">
 
-                    <h3 class="tex-uppercase">editar una persona</h3>
+                    <h3 class="tex-uppercase">editar un cliente</h3>
 
                 </div>
                 <div class="card-body">
-                <form action="/edit/{{persona.id}}"method="post">
+                <form action="/edit/{{cliente.id}}"method="post">
 
                         <div class="input-group mt-2">
-                            <label for="name" class="input-group-text">nombre persona</label>
+                            <label for="name" class="input-group-text">nombre cliente</label>
                             <input class="form-control" type="text" name="name" id="name" placeholder="ejemplo:
-             cristhian David" value="{{persona.name}}"autofocus required>
+             cristhian David" value="{{cliente.name}}"autofocus required>
 
                         </div>
 
                         <div class="input-group mt-2">
-                            <label for="lastname" class="input-group-text"> apellido persona</label>
+                            <label for="lastname" class="input-group-text"> apellido cliente</label>
                             <input class="form-control" type="text" name "lastname" id="lastname"
-                                placeholder="ejemplo: Galvis cardona" value="{{persona.lastname}}" required>
+                                placeholder="ejemplo: Galvis cardona" value="{{cliente.lastname}}" required>
 
                         </div>
                         <div class="input-group mt-2">
-                            <label for="age" class="input-Group-text"> Edad</label>
+                            <label for="age" class="input-Group-text"> Nit</label>
                             <input class="form-control" type="text" name="lastname" id="lastname"
-                                placeholder="0" value="{{persona.age}}" required>
+                                placeholder="0" value="{{cliente.Nit}}" required>
 
                         </div>
 

@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row mt-5">
-        <h3 class="text-center text-uppercase p-2">lista de personas</h3> 
+        <h3 class="text-center text-uppercase p-2">lista de clientes</h3> 
         {{#iff personas}} 
 
          <table class="table text center">
@@ -9,7 +9,7 @@
                 <tr class="table-dark>">
                       <th scope="col" class="col-4">Nombre    </th>  
                       <th scope="col">Apellido  </th>  
-                      <th scope="col">Edad      </th> 
+                      <th scope="col">Nit     </th> 
                       <th scope="col">Acciones  </th>
                 </tr>
 
@@ -17,7 +17,7 @@
             <tbody>  
 
                 
-                 {{#each personas}} 
+                 {{#each clientes}} 
 
                  
 
@@ -26,7 +26,7 @@
                  <tr>
                      <td>{{name}}</td> 
                      <td>{{lasName}}</td> 
-                     <td>{{age}}</td> 
+                     <td>{{Nit}}</td> 
                      <td>
                         <div class="btn-group">
                             <a href="/edit/{{id}}" class="btn btn-warning p-2"> 
@@ -48,11 +48,11 @@
 
         <div class="card text-center mx-auto">
             <div class="card-header"> 
-                <h3>debes crear una persona</h3>
+                <h3>debes crear un cliente</h3>
 
             </div> 
             <div class="card-body"> 
-                <p>presiona este boton para que puedas registrar a una persona en la aplicacion</p>
+                <p>presiona este boton para que puedas registrar a un cliente en la aplicacion</p>
                 <a href="#" class="btn btn-primary">Ir a crear</a> 
                 <a herf="/add" class="btn btn-primary">Ir a crear</a>  
             </div>
